@@ -331,7 +331,12 @@ star_data <- datasaurus_dozen %>%
 ggplot(data = star_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
-The values for the Star dataset are much lower because it is a smaller visualization.
+The values for the Star dataset are lower by 0.00387151
+
+```{r}
+star_data %>%
+  summarize(r = cor(x, y))
+```
 
 🧶 ✅ ⬆️ *This is another good place to pause, knit, commit changes with the commit message "Added answer for Ex 3", and push. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
