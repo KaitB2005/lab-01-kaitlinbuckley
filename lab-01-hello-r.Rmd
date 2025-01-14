@@ -331,7 +331,7 @@ star_data <- datasaurus_dozen %>%
 ggplot(data = star_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
-The values for the Star dataset are lower by 0.00387151
+The values for the Star dataset are different by 0.00151075.
 
 ```{r}
 star_data %>%
@@ -351,7 +351,7 @@ star_data <- datasaurus_dozen %>%
 ggplot(data = star_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
-The values for the circle dataset are the same as the star dataset.
+The values for the circle dataset are different from the dino data by  0.00387151.
 
   
 ```{r}
