@@ -351,6 +351,15 @@ star_data <- datasaurus_dozen %>%
 ggplot(data = star_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
+The values for the circle dataset are the same as the star dataset.
+
+  
+```{r}
+ circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")%>%
+  summarize(r = cor(x, y))
+```
+
 
 ```{marginfigure}
 Facet by the dataset variable, placing the plots in a 3 column grid, and don't add a legend.
